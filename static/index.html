@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduGenie | Your learning companion</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="EduGenie home"><span class="brand-mark">E</span><span>EduGenie</span></a>
+      <span class="status"><i></i> Learning studio</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">A clearer way to learn</p>
+      <h1>Turn curiosity into<br><em>understanding.</em></h1>
+      <p class="intro">Ask questions, unpack difficult ideas, and build momentum with an AI study companion made for real learning.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="section-heading"><span>Choose a study mode</span><small>Start with a goal</small></div>
+      <div class="modes">
+        <button class="mode active" data-mode="answer"><span class="mode-icon">?</span><strong>Ask anything</strong><small>Get a concise, clear explanation</small></button>
+        <button class="mode" data-mode="quiz"><span class="mode-icon">✓</span><strong>Generate a quiz</strong><small>Test what you know</small></button>
+        <button class="mode" data-mode="path"><span class="mode-icon">↗</span><strong>Build a learning path</strong><small>Find your next best step</small></button>
+      </div>
+
+      <form id="study-form" class="prompt-panel">
+        <label for="prompt" id="prompt-label">What would you like to understand?</label>
+        <textarea id="prompt" rows="3" placeholder="Try: Which is the largest ocean?"></textarea>
+        <div class="prompt-footer"><span id="hint">Clear answers, no unnecessary jargon.</span><button type="submit">Start learning <span>→</span></button></div>
+      </form>
+      <div id="result" class="result" hidden></div>
+    </section>
+
+    <section class="examples"><div><span class="eyebrow">Popular starting points</span><h2>Make the next<br>question count.</h2></div><div class="example-list"><button data-example="Which is the largest ocean?">Which is the largest ocean? <span>→</span></button><button data-example="Explain the Pythagoras theorem simply">Explain the Pythagoras theorem simply <span>→</span></button><button data-example="Create a learning path for SQL">Create a learning path for SQL <span>→</span></button></div></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
